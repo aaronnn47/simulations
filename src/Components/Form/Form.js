@@ -47,10 +47,10 @@ class Form extends Component{
                 <input onChange={(e)=> updateZip(e.target.value) }/>
             </div>
             
-            {/* <Link to='/image'> */}
+            <Link to='/image'>
             <button onClick={()=>{this.createPost()}}>
             Complete</button>
-            {/* </Link> */}
+            </Link>
            
             
             </div>

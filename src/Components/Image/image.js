@@ -14,6 +14,7 @@ class Image extends Component {
                 {this.props.image}
                 <hr/>
                 <input onChange={(e) => updateImage(e.target.value)} />
+                <Link to='/mortgage'><button>Next</button></Link>
             </div>
         )
     }

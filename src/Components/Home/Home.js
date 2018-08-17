@@ -26,10 +26,11 @@ class Home extends Component {
     render() {
         console.log(this.state.listing)
         let mapped = this.state.listing.map((ele,i)=>{
-            return 
+            return (
             <div key={i}>
             <div><p>{ele.city}</p></div>
             </div>
+            )
         })
         return (
             <div>

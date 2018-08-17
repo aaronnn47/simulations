@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 import {updateMortgage, updateRent} from '../../Redux/reducer'
 
 class Mortgage extends Component{
@@ -12,6 +13,8 @@ class Mortgage extends Component{
                 <input onChange={(e)=>updateMortgage(e.target.value)}/>
                 {this.props.mortgage_amount}
                 <input onChange={(e)=> updateRent(e.target.value)}/>
+                <Link to='/'><button>Home</button></Link>
+
             </div>
         )
     }
